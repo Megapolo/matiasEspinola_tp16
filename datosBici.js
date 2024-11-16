@@ -1,5 +1,5 @@
-const fs = require('fs')
-let bicis = fs.readFileSync("./bicicletas.json")
+const {readFileSync} = require('fs')
+let bicis = readFileSync("./bicicletas.json")
 bicis = JSON.parse(bicis)
 
 module.exports = bicis
